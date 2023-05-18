@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="google2.css">
+    <title>Google</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a class="small-text" href="https://mail.google.com/mail/">Gmail</a></li>
+                <li><a class="small-text" href="https://mail.google.com/mail/">Images</a></li>
+                <li class="menu-bg"><img class="menu-button" src="R.png" alt="menu button"></li>
+                <li><img class="profile-pic" src="AT.png" alt="profile pic"></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="search-wrapper"><img class="logo"
+            src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="logo">
+        <form id="frmSearch" onsubmit="takeValue()">
+            <img class="search" src="Search.jpg">
+            <img class="mic" src="mic.jpg">
+            <img class="camera" src="camera.jpg">
+            <input type="text" id="txtSearch">
+            <div class="buttons">
+                <button type="submit">Google Search</button>
+                <button type="submit">I'm Feeling Lucky</button>
+            </div>
+        </form>
+        <script>
+            function takeValue() {
+                var txtSearch=document.getElementById("txtSearch").value;
+                document.write("You Have Typed : <BR>"+txtSearch+"<br>");
+            }
+        </script>
+        <div class="hyperlinks">
+            Google offered in:
+            <a href="https://www.google.com/setprefs?">हिन्दी</a>
+            <a href="https://www.google.com/setprefs?">বাংলা</a>
+            <a href="https://www.google.com/setprefs?">తెలుగు</a>
+            <a href="https://www.google.com/setprefs?">मराठी</a>
+            <a href="https://www.google.com/setprefs?">தமிழ்</a>
+            <a href="https://www.google.com/setprefs?">ગુજરાતી</a>
+            <a href="https://www.google.com/setprefs?">ಕನ್ನಡ</a>
+            <a href="https://www.google.com/setprefs?">മലയാളം</a>
+            <a href="https://www.google.com/setprefs?">ਪੰਜਾਬੀ</a>
+        </div>
+    </section>
+    <footer>
+        <div class="panel">India</div>
+        <div class="ab">
+            <div class="ab">
+                <a class="qw" href="">About</a>
+                <a class="qw" href="">Advertising</a>
+                <a class="qw" href="">Business</a>
+                <a class="qw" href="">How Search Works</a>
+            </div>
+            <div class="ab">
+                <a class="qw" href="">Privacy</a>
+                <a class="qw" href="">Terms</a>
+                <a class="qw" href="">Settings</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
